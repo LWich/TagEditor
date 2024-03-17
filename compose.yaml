@@ -1,0 +1,21 @@
+services:
+  server:
+    container_name: server
+    build: 
+      context: .
+      dockerfile: docker/server/Dockerfile 
+    restart: always
+    ports:
+      - "3000:3000"
+  map:
+    container_name: map
+    build: 
+      context: .
+      dockerfile: docker/map/Dockerfile 
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - ID_PRESETS_CDN_URL=http://localhost:3000/
+    depends_on:
+      - server

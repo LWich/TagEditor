@@ -1,0 +1,7 @@
+{
+    "key": "rating",
+    "type": "combo",
+    "label": "Power Rating",
+    "snake_case": false,
+    "caseSensitive": true
+}

@@ -1,0 +1,10 @@
+{
+    "key": "payment:",
+    "type": "multiCombo",
+    "label": "{payment_multi}",
+    "prerequisiteTag": {
+        "key": "fee",
+        "valueNot": "no"
+    },
+    "stringsCrossReference": "{payment_multi}"
+}

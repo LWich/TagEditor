@@ -1,0 +1,29 @@
+{
+    "key": "surface",
+    "type": "combo",
+    "label": "Surface",
+    "strings": {
+        "options": {
+            "artificial_turf": "Artificial Turf",
+            "asphalt": "Asphalt",
+            "compacted": "Compacted",
+            "concrete": "Concrete",
+            "dirt": "Dirt",
+            "fine_gravel": "Fine Gravel",
+            "grass": "Grass",
+            "gravel": "Gravel",
+            "ground": "Ground",
+            "metal": "Metal",
+            "mud": "Persistently Muddy",
+            "paved": "Paved",
+            "paving_stones": "Paving Stones",
+            "salt": "Salt",
+            "sand": "Sand",
+            "sett": "Sett",
+            "unhewn_cobblestone": "Cobblestone (uncut, rounded stones)",
+            "unpaved": "Unpaved",
+            "wood": "Wood",
+            "woodchips": "Woodchips"
+        }
+    }
+}

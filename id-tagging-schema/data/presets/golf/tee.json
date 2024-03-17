@@ -1,0 +1,19 @@
+{
+    "icon": "maki-golf",
+    "fields": [
+        "tee",
+        "surface"
+    ],
+    "geometry": [
+        "vertex",
+        "area"
+    ],
+    "tags": {
+        "golf": "tee"
+    },
+    "name": "Tee Box",
+    "aliases": [
+        "Tee",
+        "Teeing Ground"
+    ]
+}

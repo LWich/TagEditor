@@ -1,0 +1,9 @@
+{
+    "key": "destination:symbol",
+    "type": "semiCombo",
+    "label": "{destination/symbol}",
+    "prerequisiteTag": {
+        "key": "oneway",
+        "value": "yes"
+    }
+}

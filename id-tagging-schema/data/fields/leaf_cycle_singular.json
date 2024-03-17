@@ -1,0 +1,14 @@
+{
+    "key": "leaf_cycle",
+    "type": "combo",
+    "label": "{leaf_cycle}",
+    "stringsCrossReference": "{leaf_cycle}",
+    "options": [
+        "evergreen",
+        "deciduous",
+        "semi_evergreen",
+        "semi_deciduous"
+    ],
+    "autoSuggestions": false,
+    "customValues": false
+}
