@@ -8,4 +8,4 @@ RUN npm i
 RUN npm run all
 
 CMD [ "npm", "run", "start" ]
-EXPOSE 8080
+EXPOSE 8090

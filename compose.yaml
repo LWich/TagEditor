@@ -6,7 +6,7 @@ services:
       dockerfile: docker/server/Dockerfile 
     restart: always
     ports:
-      - "3000:3000"
+      - "4000:4000"
   map:
     container_name: map
     build: 
@@ -14,8 +14,8 @@ services:
       dockerfile: docker/map/Dockerfile 
     restart: always
     ports:
-      - "8080:8080"
+      - "8090:8090"
     environment:
-      - ID_PRESETS_CDN_URL=http://localhost:3000/
+      - ID_PRESETS_CDN_URL=http://localhost:4000/
     depends_on:
       - server

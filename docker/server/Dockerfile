@@ -7,4 +7,4 @@ COPY id-tagging-schema .
 RUN npm i 
 
 CMD [ "node", "index.js" ]
-EXPOSE 3000
+EXPOSE 4000

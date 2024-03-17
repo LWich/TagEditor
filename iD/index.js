@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         request.onload = (event) => {
             console.log('request finished');
         };
-        request.open('POST', 'http://localhost:3000/add');
+        request.open('POST', 'http://localhost:4000/add');
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify(json));
         location.reload();
