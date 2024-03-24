@@ -47,12 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             reader.readAsBinaryString(file.files[0]);
+        } else {
+            sendReaquest(null);
         }
     }
 
     function sendReaquest(data) {
         let fileName = '';
-        if (!(file.value === '')) {
+        if (file.value !== '') {
             fileName = file.value.split(/(\\|\/)/g).pop();
         } else {
             const icon = selectBtn.firstElementChild.innerHTML.trim().split(' ');
