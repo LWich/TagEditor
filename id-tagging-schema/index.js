@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
     origin: '*',
 }));
-app.use(audit());
+// app.use(audit());
 app.use(express.json())
 
 const port = 4000;
@@ -40,11 +40,27 @@ function runDist() {
     });
 }
 
+
+function saveIcon(filePath, data) {
+    console.log(filePath)
+    console.log(data)
+    if (!fs.existsSync('icons/' + filePath )) {
+        fs.appendFile('icons/' + filePath, data, ()=>{});
+    }
+    return 'http://localhost:4000/icons/' + filePath;
+}
+
+app.get('/info', (req, res) => {
+    const files = fs.readdirSync('./icons/');
+    res.json(files);
+});
+
 app.post('/add', (req, res) => {
     const name = req.body.name;
-    const icon = req.body.icon;
+    const fileName = req.body.fileName; 
+    const body = req.body.data;
     const obj = {
-        icon: icon,
+        imageURL: saveIcon(fileName, body),
         tags: {
             custom: name 
         },

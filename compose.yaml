@@ -16,6 +16,6 @@ services:
     ports:
       - "8090:8090"
     environment:
-      - ID_PRESETS_CDN_URL=http://localhost:4000/
+      - ID_PRESETS_CDN_URL=https://maps.megafete.ru/
     depends_on:
       - server

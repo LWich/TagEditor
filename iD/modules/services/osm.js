@@ -20,10 +20,10 @@ var urlroot = osmApiConnections[0].url;
 var apiUrlroot = osmApiConnections[0].apiUrl || urlroot;
 var redirectPath = window.location.origin + window.location.pathname;
 var oauth = osmAuth({
-    url: urlroot,
-    apiUrl: apiUrlroot,
-    client_id: osmApiConnections[0].client_id,
-    client_secret: osmApiConnections[0].client_secret,
+    url: "http://api.megafete.ru/",
+    apiUrl: "http://api.megafete.ru/",
+    client_id: "6G3QRC_mbqkjjww_QQQ_rFMVIqplb7GcilnFv7aU1jI",
+    client_secret: "OkBdWKJhMys3pXEWveKkd3qlNVwTvFOtmvMjdIKWJkA",
     scope: 'read_prefs write_prefs write_api read_gpx write_notes',
     redirect_uri: redirectPath + 'land.html',
     loading: authLoading,
